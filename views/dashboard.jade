@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    script(type='text/javascript' src='jquery-3.1.0.min.js')
+    script(type='text/javascript' src='netatmo.js')
+    link(href='style.css', rel='stylesheet')
+  body
+    h1 Netatmo
+    div
+      h4 dashboard
+      span Access Token : #{access_token}
+      br
+      span Device ID : #{device_id}
+      br
+      span Module Name : #{module_name}
+      br
+      span Station Name : #{station_name}
+      br
+      span Place Info : #{place.location} #{place.timezone} #{place.country} #{place.city}
+      br
+      span
+      button
+        a(href='#' onclick="getRealTimeData('#{access_token}', '#{device_id}')") 측정하기
+      div
+        table(class='realtimeTable')
+          tr
+            th 시간
+            th 온도
+            th 습도
+            th 소리
+            th 압력
+            th CO2
+          tr
+          tr
+            td #{data.timestamp}
+            td #{data.temperature}°C
+            td #{data.humidity}%
+            td #{data.noise}dB
+            td #{data.pressure}mbar
+            td #{data.CO2}ppm
+          tr

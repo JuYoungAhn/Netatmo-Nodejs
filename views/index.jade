@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    script(type='text/javascript' src='jquery-3.1.0.min.js')
+    script(type='text/javascript' src='netatmo.js')
+    link(href='style.css', rel='stylesheet')
+  body
+    h1 Netatmo
+    div
+      h4 Insert Your Information
+      table
+        tr
+          td User ID
+          td
+            input(type='text' class='id')
+            &nbsp;<- insert your id
+        tr
+          td Password
+          td
+            input(type='password' class='password')
+            &nbsp;<- insert your password
+        tr
+          td Client ID
+          td
+            input(type='text' class='client_id' value='57c51dbf6b0aff58548b4639')
+        tr
+          td Client Secret
+          td
+            input(type='text' class='client_secret' value='HwvO5OxbO8vFIa4G7jT60dlOQJ')
+        tr
+          td Device ID
+          td
+            input(type='text' class='device_id' value='70:ee:50:02:f5:36')
+            &nbsp;<- insert your device id
+        tr
+          td Redirect Uri
+          td
+            input(type='text' class='redirect_uri' value='access_token' disabled)
+        tr
+          td Scope
+          td
+            input(type='text' class='scope' value='read_station')
+
+      button
+        a(href='#' onclick='login()') 로그인하기

@@ -88,7 +88,7 @@ app.get('/dashboard', function(req, res){
       headers: headers,
       form: {
         "access_token" : access_token,
-        "device_id" : '70:ee:50:02:f5:36',
+        "device_id" : device_id,
         "get_favorites" : false
       }
   }

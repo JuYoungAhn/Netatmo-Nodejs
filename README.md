@@ -1,5 +1,10 @@
-# Enertalk-NodeJs
+# Netatmo-NodeJs
 
-Enertalk API Project using Node js 
+Simple Netatmo API Application using Node js 
 
-It's based on <a href="https://developer.encoredtech.com/home-apis/">Enertalk Home API Documentation</a>
+It covers only two topic
+
+1. Process of Authentication(OAuth2) and 
+2. How to get station data
+
+It's based on <a href="https://dev.netatmo.com/dev/resources/technical/introduction">Netatmo API Documentation</a>
